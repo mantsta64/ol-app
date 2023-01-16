@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('Hello', [AuthController::class]);
+Route::get('auth', [AuthController::class]);
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
